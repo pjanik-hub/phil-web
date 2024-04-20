@@ -4,12 +4,31 @@ $background2: #394867;
 $accent: #212a3e;
 $laccent: #9ba4b5;
 
+@use "@angular/material" as mat;
+@use "_themes.scss" as my-palettes;
+
+$my-primary: mat.define-palette(my-palettes.$md-primary);
+$my-accent: mat.define-palette(my-palettes.$md-accent);
+$my-error: mat.define-palette(my-palettes.$md-error);
+
+$my-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $my-primary,
+      accent: $my-accent,
+      warn: $my-error,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+  )
+);
+
+@include mat.all-component-themes($my-theme);
+
 html,
 body {
   margin: 0;
   padding: 0;
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  background-color: $background;
 }
