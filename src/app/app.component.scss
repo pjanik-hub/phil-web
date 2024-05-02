@@ -1,18 +1,18 @@
-$background: #f1f6f9;
-$background2: #394867;
 $accent: #212a3e;
-$laccent: #9ba4b5;
 
 main {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
 
-  nav {
-    background-color: $background2;
+  mat-toolbar {
+    display: flex;
+    justify-content: end;
 
     grid-row: 1;
     grid-column: 1 / span 3;
+  }
 
+  nav {
     ul {
       display: flex;
       flex-direction: row;
@@ -27,14 +27,9 @@ main {
       display: flex;
 
       margin: 4px;
-      color: $background;
 
       user-select: none;
       cursor: pointer;
-
-      &:hover {
-        background-color: $accent;
-      }
 
       a {
         padding: 8px 16px;
@@ -60,5 +55,7 @@ main {
   section {
     grid-row: 2;
     grid-column: 2;
+
+    margin: 32px 0;
   }
 }

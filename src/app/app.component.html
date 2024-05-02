@@ -1,33 +1,38 @@
-<main class="main">
-  <nav>
-    <ul>
-      <li>
-        <a
-          routerLink="/home-component"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="/projects-component"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >Projects</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="/contact-component"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <section class="main">
+<main class="main mat-typography">
+  <mat-toolbar color="primary">
+    <nav>
+      <ul>
+        <li>
+          <a
+            mat-button
+            routerLink="/home-component"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            mat-button
+            routerLink="/projects-component"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            mat-button
+            routerLink="/contact-component"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </mat-toolbar>
+  <section>
     <router-outlet></router-outlet>
   </section>
 </main>

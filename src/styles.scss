@@ -1,9 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-$background: #f1f6f9;
-$background2: #394867;
-$accent: #212a3e;
-$laccent: #9ba4b5;
-
 @use "@angular/material" as mat;
 @use "_themes.scss" as my-palettes;
 
@@ -30,5 +25,5 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Rubik", Tahoma, Geneva, Verdana, sans-serif !important;
 }
